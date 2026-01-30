@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polityka Prywatności - Meal Prep App</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+        h1 {
+            color: #1a1a1a;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 15px;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-top: 35px;
+            font-size: 1.4em;
+        }
+        h3 {
+            color: #444;
+            margin-top: 25px;
+            font-size: 1.1em;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul {
+            margin-bottom: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .warning-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            color: #856404;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .version-tag {
+            background-color: #e9ecef;
+            color: #495057;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 5px;
+        }
+        footer {
+            margin-top: 60px;
+            font-size: 0.8em;
+            color: #777;
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+        a {
+            color: #007aff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Polityka Prywatności Aplikacji "Meal Prep App"</h1>
+    <div id="version-container">
+        <span class="version-tag">Wersja dokumentu: <span id="version-number">14e27e14-1350-4f76-ba4a-efb408f0da52</span></span>
+    </div>
+    <p><strong>Data ostatniej aktualizacji:</strong> 20 Stycznia 2026</p>
+</header>
+
+<div class="warning-box">
+    <strong>Status Aplikacji:</strong> Niniejsza aplikacja znajduje się w fazie testów beta (Apple TestFlight). Niektóre funkcjonalności mogą ulegać zmianom.
+</div>
+
+<h2>1. Administrator Danych</h2>
+<p>Administratorem danych oraz właścicielem aplikacji jest doddlecode.<br>
+    Wszelkie pytania dotyczące prywatności prosimy kierować na adres: <a href="mailto:contact@doddlecode.com">contact@doddlecode.com</a>.</p>
+
+<h2>2. Zakres zbieranych danych</h2>
+<p>W celu świadczenia usług, aplikacja <strong>Meal Prep App</strong> przetwarza następujące dane:</p>
+<ul>
+    <li><strong>Adres e-mail:</strong> Jest on niezbędny do procesu rejestracji i logowania użytkownika oraz identyfikacji konta w bazie danych.</li>
+    <li><strong>Dane wprowadzane przez użytkownika:</strong> Nazwy dań, listy składników, preferencje dietetyczne oraz preferowany czas przygotowania posiłku. Dane te są przetwarzane w celu wygenerowania przepisu.</li>
+    <li><strong>Zapisane treści:</strong> Wygenerowane przepisy, które użytkownik zdecyduje się zapisać, są przechowywane w bazie danych przypisanej do konta użytkownika.</li>
+    <li><strong>Dane analityczne:</strong> Informacje o zużyciu tokenów AI (ilość generowanych treści) przypisane do identyfikatora użytkownika.</li>
+</ul>
+
+<h2>3. Wykorzystanie Sztucznej Inteligencji (AI Disclaimer)</h2>
+<p>Aplikacja wykorzystuje algorytmy Sztucznej Inteligencji (Google Firebase AI Logic) do generowania przepisów kulinarnych.</p>
+<div class="warning-box" style="background-color: #f8d7da; border-color: #f5c6cb; color: #721c24;">
+    <strong>WAŻNE OSTRZEŻENIE:</strong>
+    <ul>
+        <li>Modele AI mogą popełniać błędy ("halucynacje") i generować przepisy zawierające niepoprawne proporcje, instrukcje lub połączenia składników.</li>
+        <li>Użytkownik zobowiązany jest do weryfikacji wygenerowanego przepisu przed przystąpieniem do gotowania.</li>
+        <li><strong>Wyłączenie odpowiedzialności:</strong> Administrator aplikacji nie ponosi odpowiedzialności za szkody zdrowotne, materialne lub inne wynikłe z zastosowania przepisów wygenerowanych przez AI (w tym za reakcje alergiczne, niestrawności czy nieudane potrawy). Korzystasz z sugestii AI na własną odpowiedzialność.</li>
+    </ul>
+</div>
+
+<h2>4. Usługi Zewnętrzne i SDK</h2>
+<p>Aplikacja korzysta z platformy <strong>Google Firebase</strong> w celu zapewnienia infrastruktury backendowej. Poniżej znajduje się lista wykorzystywanych modułów:</p>
+<ul>
+    <li><strong>Firebase Authentication:</strong> Do bezpiecznego zarządzania tożsamością użytkowników i logowania (przechowywanie adresu e-mail).</li>
+    <li><strong>Cloud Firestore:</strong> Baza danych do przechowywania zapisanych przez użytkownika przepisów.</li>
+    <li><strong>Firebase Cloud Functions & AI Logic:</strong> Do przetwarzania zapytań użytkownika i komunikacji z modelami generatywnymi.</li>
+    <li><strong>Firebase Analytics:</strong> Do analizy sposobu korzystania z aplikacji oraz monitorowania zużycia tokenów AI przez użytkowników.</li>
+    <li><strong>Firebase App Check:</strong> Do ochrony backendu przed nieautoryzowanym dostępem i nadużyciami.</li>
+</ul>
+
+<h2>5. Uprawnienia Systemowe</h2>
+<p>Szanujemy prywatność Twojego urządzenia. Aplikacja <strong>nie wymaga</strong> i nie prosi o dostęp do:</p>
+<ul>
+    <li>Kamery i mikrofonu.</li>
+    <li>Galerii zdjęć i plików lokalnych.</li>
+    <li>Listy kontaktów.</li>
+    <li>Lokalizacji GPS.</li>
+    <li>Systemu powiadomień push.</li>
+</ul>
+
+<h2>6. Przechowywanie i Usuwanie Danych</h2>
+<p>Dane przechowywane są na serwerach Google (Firebase). Użytkownik ma prawo wglądu do swoich danych oraz ich usunięcia. W celu całkowitego usunięcia konta i powiązanych z nim danych, prosimy o kontakt mailowy na adres <a href="mailto:contact@doddlecode.com">contact@doddlecode.com</a> lub skorzystanie z funkcji usuwania konta wewnątrz aplikacji (jeśli jest dostępna w obecnej wersji beta).</p>
+
+<footer>
+    <p>&copy; <span id="current-date"></span> doddlecode. Wszelkie prawa zastrzeżone.</p>
+</footer>
+
+<script>
+  const currentDateContainer = document.getElementById('current-date');
+  currentDateContainer.textContent = new Date().getFullYear().toString();
+</script>
+
+</body>
+</html>
